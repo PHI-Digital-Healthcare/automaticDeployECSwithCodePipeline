@@ -30,7 +30,7 @@ jobs:
       
     - name: Build, tag, and push image to Amazon ECR
       run: |
-        cd my-app
+        cd /my-app
         docker build -t phi-react .
 	docker tag phi-react:latest 551185747239.dkr.ecr.ap-northeast-2.amazonaws.com/phi-react:latest
         docker push 551185747239.dkr.ecr.ap-northeast-2.amazonaws.com/phi-react:latest
